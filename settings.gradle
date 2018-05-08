@@ -1,1 +1,3 @@
 rootProject.name = 'base'
+includeFlat  'appbase'
+includeFlat  'commons'

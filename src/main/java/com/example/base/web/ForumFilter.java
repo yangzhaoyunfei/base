@@ -11,7 +11,10 @@ import static com.smart.cons.CommonConstant.LOGIN_TO_URL;
 import static com.smart.cons.CommonConstant.USER_CONTEXT;
 
 /**
- * 过滤器,因为有些资源需要登录才能访问,所以我们需要判断用户访问的是那种资源,以及用户的登录状态,所以需要加一个过滤器
+ * Description: 过滤器,因为有些资源需要登录才能访问,所以我们需要判断用户访问的是那种资源,以及用户的登录状态,所以需要加一个过滤器
+ *
+ * @author yangzhaoyunfei yangzhaoyunfei@qq.com
+ * @date 2018/5/9
  */
 public class ForumFilter implements Filter {
 

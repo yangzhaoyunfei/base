@@ -4,11 +4,15 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
 
 /**
- * 异常处理
+ * Description: 异常处理
+ *
+ * @author yangzhaoyunfei yangzhaoyunfei@qq.com
+ * @date 2018/5/9
  */
 public class ForumHandlerExceptionResolver extends
         SimpleMappingExceptionResolver {
-	protected ModelAndView doResolveException(
+    @Override
+    protected ModelAndView doResolveException(
 			javax.servlet.http.HttpServletRequest httpServletRequest,
 			javax.servlet.http.HttpServletResponse httpServletResponse,
 			Object o, Exception e) {

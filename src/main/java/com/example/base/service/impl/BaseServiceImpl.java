@@ -6,6 +6,7 @@ import com.example.base.service.BaseService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
@@ -27,7 +28,8 @@ public class BaseServiceImpl<T> implements BaseService<T> {
      * @param mapper
      */
     @Autowired
-    public BaseServiceImpl(BaseMapper mapper) {
+
+    public BaseServiceImpl(@Qualifier("baseMapper") BaseMapper mapper) {
         this.mapper = mapper;
     }
 
