@@ -12,8 +12,11 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 /**
- * 所有Controller的基类,
- * 提供其他controller共有的一些方法,所有具体的controller都继承于这个controller,并定义自己的请求方法
+ * Description: 所有Controller的基类,提供其他controller共有的一些方法,
+ * 所有具体的controller都继承于这个controller,并定义自己的请求方法
+ *
+ * @author yangzhaoyunfei yangzhaoyunfei@qq.com
+ * @date 2018/5/9
  */
 public class BaseController<T> {
     protected static final String ERROR_MSG_KEY = "errorMsg";
@@ -70,8 +73,7 @@ public class BaseController<T> {
 
         Page<T> pos = reportService.selectPageList(map);
 
-        PageUtils page = new PageUtils(pos.getResult(), (int) pos.getTotal());
+        return  new PageUtils(pos.getResult(), (int) pos.getTotal());
 
-        return page;
     }
 }
