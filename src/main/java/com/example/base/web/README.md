@@ -1,0 +1,3 @@
+由于web层的每个controller都有一些常用操作,所以我们提供了一个Controller的基类
+用web层将service与page关联起来
+给请求设置过滤标识,防止一次请求多次过滤
